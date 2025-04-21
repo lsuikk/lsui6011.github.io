@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-has">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/pingfang-sc" rel="stylesheet">
+    <title>Personal Portfolio - About</title>
+    <style>
+        body {
+            font-family: 'PingFang SC', sans-serif;
+            background-color: #fff;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 1rem;
+            z-index: 100;
+            transition: background-color 0.3s ease;
+        }
+
+        nav.scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+
+        nav a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00ffcc;
+        }
+
+        .section {
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .about-content img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 2rem;
+        }
+
+        .about-content p {
+            max-width: 60%;
+            line-height: 1.6;
+        }
+
+        #glitter {
+            position: absolute;
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        /* 抽象元素示例 */
+        .abstract-element {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: rgba(255, 0, 68, 0.482);
+        }
